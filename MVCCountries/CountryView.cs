@@ -8,9 +8,9 @@ namespace MVCCountries
     {
         
         public Country DisplayCountry { get; set; }
-        public CountryView(Country Country)
+        public CountryView(Country DisplayCountry)
         {
-            Country = DisplayCountry;
+            this.DisplayCountry = DisplayCountry;
         }
         public void Display()
         {

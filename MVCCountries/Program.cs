@@ -6,7 +6,8 @@ namespace MVCCountries
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            CountryController cc = new CountryController();
+            cc.WelcomeAction();
         }
     }
 }

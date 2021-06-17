@@ -8,6 +8,10 @@ namespace MVCCountries
     {
         public List<Country> CountryDB { get; set; }
 
+        public CountryController()
+        {
+            CountryDB.Add(new Country() { Name = "Thailand", Region = Country.Continent.Asia, Colors = { "red", "bull" } });
+        }
         public void CountryAction(Country c)
         {
             CountryView cv = new CountryView(c);
